@@ -1,0 +1,28 @@
+.features {
+    border-bottom: 1px solid #e4e4eb;
+    padding: 5px;
+
+    a {
+        text-decoration: none;
+        color: $dark;
+        padding: 5px;
+    }
+
+    .active {
+        border-bottom: 3px solid $primary;
+    }
+}
+
+.browser-details {
+    width: 250px;
+    height: 320px;
+    padding: 25px;
+}
+
+.firefox-wrapper {
+    margin-top: 30px;
+}
+
+.opera-wrapper {
+    margin-top: 60px;
+}
