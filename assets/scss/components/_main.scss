@@ -13,6 +13,58 @@
     }
 }
 
+.hero {
+    height: 350px;
+    width: 450px;
+    // z-index: 10;
+    position: relative;
+
+    &::after {
+        content: "";
+        background-color: $secondary;
+        height: 60%;
+        right: -32%;
+        top: 30%;
+        border-radius: 999em 0 0 999em;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+
+    img {
+        z-index: 10;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+.hero-2 {
+    height: 350px;
+    width: 450px;
+    // z-index: 10;
+    position: relative;
+
+    &::after {
+        content: "";
+        background-color: $secondary;
+        height: 60%;
+        left: -31%;
+        top: 40%;
+        border-radius: 0 999em 999em 0;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+
+    img {
+        z-index: 10;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
 .browser-details {
     width: 250px;
     height: 320px;
@@ -25,4 +77,77 @@
 
 .opera-wrapper {
     margin-top: 60px;
+}
+
+.contact-wrapper {
+    margin-top: 150px;
+
+    input {
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+}
+
+.testimonial {
+    position: relative;
+    height: 400px;
+
+    .bookmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #fff;
+    }
+
+    #bookmark:checked+.bookmark {
+        z-index: 500;
+    }
+
+    #bookmark:checked .test {
+        border-bottom: 2px solid red;
+    }
+
+    .search {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    #search:checked+.search {
+        z-index: 500;
+    }
+
+    .share {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    #share:checked+.share {
+        z-index: 500;
+
+    }
+}
+
+.wrapper>input {
+    display: none;
+}
+
+.wrapper>input+div {
+    display: none;
+}
+
+.wrapper>input:checked+div {
+    display: block;
 }
