@@ -1,8 +1,40 @@
 header {
     padding: 0 100px;
 
+    @media (max-width:768px) {
+        padding: 0 20px;
+    }
+
     .nav-link {
         font-size: 14px;
         font-weight: 500;
     }
+}
+
+
+.toggle-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+    background-color: #242b44;
+    opacity: 0.89;
+
+    .toggle {
+        li {
+            border-top: 1px solid #e4e4eb;
+            padding: 10px;
+            font-size: 20px;
+        }
+    }
+}
+
+#toggle:checked+.toggle-nav {
+    display: block;
+}
+
+#toggle-close:checked~.toggle-nav {
+    display: none;
 }

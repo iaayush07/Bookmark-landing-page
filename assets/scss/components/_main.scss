@@ -1,6 +1,25 @@
+.bookmark-detail {
+    padding-left: 150px;
+
+    @media (max-width:1024px) {
+        padding-left: 20px;
+    }
+
+    @media (max-width:768px) {
+        padding-left: 0;
+    }
+}
+
 .features {
-    border-bottom: 1px solid #e4e4eb;
-    padding: 5px;
+    width: 100%;
+
+    .feature-title {
+        border-bottom: 1px solid #e4e4eb;
+        padding: 10px;
+        text-align: center;
+        white-space: nowrap;
+        ;
+    }
 
     a {
         text-decoration: none;
@@ -18,6 +37,11 @@
     width: 450px;
     // z-index: 10;
     position: relative;
+
+    @media (max-width:425px) {
+        height: 280px;
+        width: 320px;
+    }
 
     &::after {
         content: "";
@@ -45,6 +69,16 @@
     // z-index: 10;
     position: relative;
 
+    @media (max-width:425px) {
+        height: 280px;
+        width: 320px;
+    }
+
+    @media (max-width:320px) {
+        height: 250px;
+        width: 280px;
+    }
+
     &::after {
         content: "";
         background-color: $secondary;
@@ -55,6 +89,10 @@
         width: 100%;
         z-index: -1;
         position: absolute;
+
+        @media (max-width:768px) {
+            left: -36%;
+        }
     }
 
     img {
@@ -65,18 +103,54 @@
     }
 }
 
+.fetaures-wrapper {
+    width: 50%;
+
+    @media (max-width:768px) {
+        width: 75%;
+    }
+
+    @media (max-width:425px) {
+        width: 90%;
+    }
+}
+
 .browser-details {
     width: 250px;
     height: 320px;
     padding: 25px;
 }
 
+.browser {
+    width: 50%;
+
+    @media (max-width:425px) {
+        width: 90%;
+    }
+}
+
 .firefox-wrapper {
     margin-top: 30px;
+
+    @media (max-width:768px) {
+        margin-top: 60px;
+    }
 }
 
 .opera-wrapper {
     margin-top: 60px;
+}
+
+.questions-wrapper {
+    width: 50%;
+
+    @media (max-width:768px) {
+        width: 75%;
+    }
+
+    @media (max-width:425px) {
+        width: 90%;
+    }
 }
 
 .contact-wrapper {
@@ -94,6 +168,18 @@
 .testimonial {
     position: relative;
     height: 400px;
+
+    @media (max-width:768px) {
+        height: 600px;
+    }
+
+    p {
+        width: 100%;
+
+        @media (max-width:425px) {
+            width: 90%;
+        }
+    }
 
     .bookmark {
         position: absolute;
