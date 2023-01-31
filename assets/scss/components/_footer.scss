@@ -5,4 +5,15 @@ footer {
     .nav-link {
         font-size: 14px;
     }
+
+    .social-media {
+        svg {
+            cursor: pointer;
+            fill: #fff;
+
+            &:hover {
+                fill: $primary;
+            }
+        }
+    }
 }
