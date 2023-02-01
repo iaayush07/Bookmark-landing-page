@@ -8230,6 +8230,27 @@ main .browser-btn a {
   display: block;
 }
 
+.contact-us-btn {
+  color: #fff;
+}
+.contact-us-btn:hover {
+  background: #fff;
+  color: #f9575b;
+  border: 2px solid #f9575b;
+}
+
+#erroricon {
+  margin: auto 10px auto 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+#emailwrapper {
+  padding: 2px;
+}
+
 footer {
   padding: 20px 100px;
   background-color: #242a44;

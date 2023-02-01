@@ -337,4 +337,25 @@ main {
     display: block;
 }
 
+.contact-us-btn {
+    color: #fff;
+
+    &:hover {
+        background: #fff;
+        color: $primary;
+        border: 2px solid $primary;
+    }
+}
+
 // .question-answer: end--
+#erroricon {
+    margin: auto 10px auto 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#emailwrapper {
+    padding: 2px;
+}
