@@ -8018,6 +8018,10 @@ main .browser-btn a {
   border-bottom: 3px solid #f9575b;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 .hero {
   height: 350px;
   width: 450px;
