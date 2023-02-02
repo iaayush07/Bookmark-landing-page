@@ -21,5 +21,7 @@ function emailVarification(){
     else{
         emailerrmsg.classList.remove(['d-block']);
         emailerrmsg.classList.add(['d-none']);
+        erroricon.classList.remove(['d-block']);
+        erroricon.classList.add(['d-none']);
     }
 }
